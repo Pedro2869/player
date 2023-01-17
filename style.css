@@ -59,6 +59,7 @@ body * {
 /* player-2 */
 #player-2 {
     grid-area: B;
+    height: fit-content;
 }
 
 /* player-3 */
@@ -105,7 +106,11 @@ body * {
     margin-top: 28px;
 }
 
-/* .prev {
+.horizontal .controls {
+    padding-inline: 58px;
+}
+
+.prev {
     cursor: pointer;
 }
 
@@ -115,7 +120,7 @@ body * {
 
 .next {
     cursor: pointer;
-} */
+}
 
 .track {
     margin-top: 28px;
@@ -152,5 +157,23 @@ body * {
     justify-content: space-between;
 
     margin-top: 9.6px;
+}
+
+@media (max-width: 670px) {
+    #app {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 270px;
+        margin: auto;
+
+        height: auto;
+
+        padding-block: 60px;
+    }
+
+    .horizontal .controls {
+        padding-inline: 30px;
+    }
 }
 
